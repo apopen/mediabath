@@ -25,6 +25,8 @@ class MediaParser
 
 		$cleanName = pathinfo( $cleanName, PATHINFO_FILENAME );
 
+		$cleanName = str_replace( '.', ' ', $cleanName );
+
 		return $cleanName;
 	}
 
@@ -58,7 +60,7 @@ class MediaParser
         	{
         		$media = new Media( $fullpath );
         		
-        		//if( $media->getExtension() != '!sync' )
+        		if( $media->getExtension() != '!sync' )
         		{
             		$path = $media->getPath();
 

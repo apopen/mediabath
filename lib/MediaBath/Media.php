@@ -4,8 +4,8 @@ namespace MediaBath;
 
 class Media
 {
-	const TV    = 'tv';
-	const MOVIE = 'movie';
+	const TV    = 'TV';
+	const MOVIE = 'Movies';
 
 	private $path;
 	private $cleanFileName;
